@@ -7,7 +7,7 @@ const Documents = () => {
   useEffect(() => {
     console.log("efect");
     const peticion = async () => {
-      const url = "http://localhost:8080/api/investigacion";
+      const url = "http://3.140.135.200:8000/api/investigacion?id_admin=1";
       const resultado = await axios.get(url, {
         params: {
           id_admin: "1",

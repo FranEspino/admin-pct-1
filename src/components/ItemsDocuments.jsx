@@ -15,7 +15,7 @@ const ItemsDocuments = ({
         <div className="flex items-center">
           <a
             className="flex-shrink-0"
-            href={`http://localhost:8080/api/file/documents/${ur_archivo}`}
+            href={`http://3.140.135.200:8000/api/file/documents/${ur_archivo}`}
             target="_blank" rel="noreferrer"
           >
             <img

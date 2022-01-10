@@ -19,7 +19,7 @@ const Items = ({
           <div className="flex-shrink-0">
             <img
               alt="avatar"
-              src={`http://localhost:8080/images/${photo}`}
+              src={`http://3.140.135.200:8000/images/${photo}`}
               className="mx-auto object-cover rounded-full h-10 w-10 "
             />
           </div>

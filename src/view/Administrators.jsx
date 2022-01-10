@@ -29,7 +29,7 @@ const Admin = () => {
   useEffect(() => {
     const peticion = async () => {
       await axios
-        .get("http://localhost:8080/api/usuarios/admin")
+        .get("http://3.140.135.200:8000/api/usuarios/admin")
         .then((response) => {
           //   console.log(response.data.investigadores);
           console.log(response.data.administradores);
@@ -64,7 +64,7 @@ const Admin = () => {
 
     
     const envio = await axios({
-      url: `http://localhost:8080/api/usuarios`,
+      url: `http://3.140.135.200:8080/api/usuarios`,
       method: "POST",
       data: formdata,
     }).then((res) => {

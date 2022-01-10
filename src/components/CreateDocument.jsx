@@ -38,7 +38,7 @@ function CreateDocument() {
     formdata.append("fecha_inicio,", data.date); //"2000-04-03"
     formdata.append("id_asesor", data.id_asesor); //1
     console.log(data);
-    fetch("http://localhost:8080/api/investigacion", {
+    fetch("http://3.140.135.200:8000/api/investigacion", {
       method: "POST",
       body: formdata,
     })

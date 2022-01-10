@@ -43,7 +43,7 @@ const Investigators = () => {
   useEffect(() => {
     const peticion = async () => {
       await axios
-        .get("http://localhost:8080/api/usuarios/investigadores")
+        .get("http://3.140.135.200:8000/api/usuarios/investigadores")
         .then((response) => {
           //   console.log(response.data.investigadores);
           console.log(response.data.investigadores);
@@ -74,7 +74,7 @@ const Investigators = () => {
     formdata.append("carrera", newUser.carrera);
     formdata.append("facultad", newUser.facultad);
     const envio = await axios({
-      url: `http://localhost:8080/api/usuarios`,
+      url: `http://3.140.135.200:8000/api/usuarios`,
       method: "POST",
       data: formdata,
     })

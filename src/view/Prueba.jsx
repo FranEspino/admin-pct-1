@@ -33,7 +33,7 @@ const Prueba = () => {
     formdata.append("descripcion", data.description);
 
     console.log(data);
-    fetch("http://localhost:8080/api/investigacion", {
+    fetch("http://3.140.135.200:8000/api/investigacion", {
       method: "PUT",
       body: formdata,
     })

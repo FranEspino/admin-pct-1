@@ -42,7 +42,7 @@ const Advisers = () => {
   useEffect(() => {
     const peticion = async () => {
       await axios
-        .get("http://localhost:8080/api/usuarios/asesores")
+        .get("http://3.140.135.200:8000/api/usuarios/asesores")
         .then((response) => {
           //   console.log(response.data.investigadores);
           console.log(response.data.asesores);
